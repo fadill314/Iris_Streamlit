@@ -28,7 +28,7 @@ def user_input_features():
 
 df = user_input_features()
 
-st.subheader('User Input parameters')
+st.header('User Input parameters')
 st.write(df)
 
 model_iris=pickle.load(open("model_iris.pkl", "rb"))
