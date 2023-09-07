@@ -1,0 +1,5 @@
+numpy
+Flask
+gunicorn
+Jinja2
+scikit-learn
