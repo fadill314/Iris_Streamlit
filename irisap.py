@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import pickle
 
-#st.image("https://seeklogo.com/images/E/ecole-hassania-des-travaux-publics-ehtp-logo-3D5770F217-seeklogo.com.png")
-st.image("http://www.ehtp.ac.ma/images/lo.png")
+st.image("https://seeklogo.com/images/E/ecole-hassania-des-travaux-publics-ehtp-logo-3D5770F217-seeklogo.com.png")
+#st.image("http://www.ehtp.ac.ma/images/lo.png")
 st.write("""
 # MSDE4 : ML Course
 ## Iris Flower Prediction App
@@ -20,10 +20,10 @@ def user_input_features():
     sepal_width = st.sidebar.slider('Sepal width', 2.0, 5.0, 3.0)
     petal_length = st.sidebar.slider('Petal length', 1.0, 7.0, 2.0)
     petal_width = st.sidebar.slider('Petal width', 0.1, 3.0, 0.5)
-    data = {'sepal_length': sepal_length,
-            'sepal_width': sepal_width,
-            'petal_length': petal_length,
-            'petal_width': petal_width}
+    data = {'sepal_length': float(sepal_length),
+            'sepal_width': float(sepal_width),
+            'petal_length': float(petal_length),
+            'petal_width': float(petal_width)}
     features = pd.DataFrame(data, index=[0])
     return features
 
