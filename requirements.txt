@@ -1,5 +1,5 @@
 numpy
-Flask
-gunicorn
-Jinja2
+streamlit
+pandas
+joblib
 scikit-learn
