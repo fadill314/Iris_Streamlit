@@ -32,7 +32,7 @@ df = user_input_features()
 st.header('User Input parameters')
 st.write(df)
 
-model_iris=pickle.load(open("model_iris_svm.pkl", "rb"))
+model_iris=pickle.load(open("model_iris39.pkl", "rb"))
 prediction = model_iris.predict(df)
 #prediction_proba = model_iris.predict_proba(df)
 
