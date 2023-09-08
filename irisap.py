@@ -34,7 +34,7 @@ st.write(df)
 
 model_iris=pickle.load(open("model_iris39.pkl", "rb"))
 prediction = model_iris.predict(df)
-#prediction_proba = model_iris.predict_proba(df)
+prediction_proba = model_iris.predict_proba(df)
 
 st.subheader('Class labels and their corresponding index number')
 st.write(pd.DataFrame(model_iris.classes_))
@@ -43,5 +43,5 @@ st.subheader('Prediction')
 st.write(prediction)
 
 st.subheader('Prediction Probability')
-#st.write(prediction_proba)
+st.write(prediction_proba)
 
